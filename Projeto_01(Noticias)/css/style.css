@@ -1,0 +1,347 @@
+        /* Bordas coloridas apenas para visualizar onde começa e termina cada tag na tela */
+    
+        /* FORMATAÇÕES GERAIS NAS TAGS */
+
+        body{
+            background: url(../img/fundo.png) repeat-x;
+            margin: 0 auto;
+        }
+
+
+        main { 
+            /* border: 2px solid #dc3545;  */
+            padding: 15px; 
+            margin: 0 auto;
+            width: 900px;
+         }
+
+        /* article { 
+            border: 2px solid #17a2b8; 
+
+            padding: 15px;
+            margin-bottom: 15px;
+         } */
+
+        /* section { 
+            border: 2px solid #6c757d;
+
+            padding: 10px;
+            margin-top: 10px;
+        } */
+
+
+        footer { 
+            border: 2px solid #343a40;
+            padding: 15px;
+        }
+
+
+        time {
+            background-color: #e2e3e5;
+            padding: 2px 5px;
+            border-radius: 3px; 
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+
+        /* FORMATAÇÕES NO CABEÇALHO */
+
+
+        .container-topo {
+            width: 900px;
+            margin: 0 auto; /* Centraliza o bloco do topo na tela */
+            position: relative; /* Passa o bastão do absolute do mapa para cá */
+        }
+
+        .container-corpo{
+            width: 1200px;
+            margin: 0 auto; /* Centraliza o conteúdo na tela */
+        }
+
+        #cabecalho{
+            padding: 15px; 
+            margin-top: 10px;
+            margin-bottom: 55px;
+
+            /* border: 1px solid blue; */
+
+        }
+
+
+        #img-cabecalho{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+
+
+        /* FORMATAÇÕES DO MENU */
+
+
+        #menu{
+            padding: 15px 0px 15px 0px;
+            margin-top: 15px;
+            background-color: #A0002E;
+            width: 710px;
+        }
+
+        #menu a{
+            /* border: 1px solid black; */
+            color: white;
+
+            font-weight: bold;
+            text-decoration: none;
+
+            padding: 15px 20px 15px 20px;
+        }
+
+        #menu a:hover{
+            color: rgb(84, 0, 0);
+        }
+
+        #menu a.select{
+            background-color: #CC0037;
+        }
+
+        #menu span{
+            color: rgba(0, 0, 0, 0.186);
+        }
+
+
+        /* CONTEUDOS DO MAIN */
+
+
+
+        #coluna-esquerda {
+
+            display: inline-block;
+            /* border: 1px solid black; */
+            width: 220px;
+             
+        }
+
+
+        .barra-lateral{
+            display: block;        /* MUDE DE INLINE-BLOCK PARA BLOCK */
+            background: url(../img/fundo-caixa.png);
+            width: 220px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-bottom: 15px;
+        }
+
+
+        .barra-lateral ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .barra-lateral ul li{
+            padding: 12px;
+        }
+
+        .barra-lateral ul a{
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+        }
+
+        .barra-lateral ul a:hover{
+            color: gray;
+            padding: 20px;
+            background: url(../img/marcador.png) no-repeat left center;
+        }
+
+
+        .barra-lateral h2{
+            background-color: #2B4A6D;
+
+            margin-top: 8px;
+            margin-left: 14px;
+            margin-bottom: 5px;
+
+            padding: 5px 10px 5px 10px;
+            color: white;
+            width: 170px;
+
+        }
+
+        .itens{
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            background-color: white;
+            width: 180px;
+            padding: 2px 5px 2px 5px;
+        }
+
+        .itens-news{
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            background-color: white;
+            width: 180px;
+            padding: 2px 5px 2px 5px;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        #btn{
+            background-color: #A0002E;
+            color: white;
+            font-size: 1rem;
+            padding: 6px;
+        }
+
+        #email{
+            height: 30px;
+            width: 130px;
+        }
+
+
+        
+        /* CONTEÚDO DA DIREITA */
+
+        #conteudo-principal {
+            display: inline-block;
+            width: 840px;          /* Deixa um espaço amplo para as notícias */
+            vertical-align: top;   /* Alinha o topo do post com o topo da barra lateral */
+
+
+            /* background-color: black; */
+        }
+
+        /* #conteudo-principal{
+            border: 2px solid #17a2b8;
+         } */
+
+
+        .coluna-noticias {
+            display: inline-block;
+            width: 300px;          /* Divide os 840px em duas partes com margem de segurança */
+            vertical-align: top;   /* Garante que as duas colunas comecem no mesmo nível no topo */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Opcional: Só para você controlar o espaçamento dos blocos de texto depois */
+        .caixa-post {
+            margin: 0px 0px 10px 25px;
+            background: url(../img/fundo-caixa.png);
+            width: 260px;
+            height: 300px;
+        }
+
+        .caixa-post-2 {
+            margin: 0px 0px 10px 25px;
+            background: url(../img/fundo-caixa.png);
+            width: 260px;
+            height: 335px;
+        }
+
+        .caixa-post-2 h2{
+            background-color: #2B4A6D;
+            padding: 10px 10px 10px 10px;
+            margin: 0;
+            color: white;
+            /* width: 170px; */
+        }
+        
+        .caixa-post h2{
+            background-color: #2B4A6D;
+            padding: 10px 10px 10px 10px;
+            margin: 0;
+            color: white;
+            /* width: 170px; */
+        }
+
+        .img-post{
+            width: 220px;
+        }
+
+        .itens-post{
+
+            margin-top: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+            background-color: white;
+            width: 220px;
+            padding: 1px 5px 2px 5px;
+        }
+
+        .itens-post p{
+            background-color: #A0002E;
+            color: black;              /* Mude de black para white */
+            font-weight: bold;
+            font-size: 0.70rem;        /* Diminui um pouco mais para a letra ficar delicada */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Define a fonte limpa */
+            
+            padding: 4px 6px;          /* Dá um respiro melhor nas laterais da caixinha */
+            margin-top: 5px;           /* Controla o espaço entre o H2 e a faixa */
+            margin-bottom: 5px;        /* Controla o espaço entre a faixa e a foto */
+            text-transform: uppercase; /* Garante que fique tudo em maiúsculo automaticamente */
+        }
+
+        .itens-post a{
+            color: #A0002E;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        /* A imagem vira um bloco alinhado pelo topo */
+        .img-sub-post {
+            display: inline-block;
+            width: 80px;
+            height: auto;
+            vertical-align: top;
+        }
+
+        /* A caixinha invisível de texto também vira inline-block ao lado da foto */
+        .textos-sub-post {
+            display: inline-block;
+            width: 130px;
+            vertical-align: top;
+            margin-left: 5px; /* Pequeno espaço entre a foto e o texto */
+        }
+
+        /* Formatando o título da mini-notícia */
+        .textos-sub-post h3 {
+            font-size: 0.75rem;
+            color: #2B4A6D;
+            margin: 0 0 3px 0; /* Remove as margens padrões e deixa só um respiro embaixo */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Formatando o parágrafo da mini-notícia */
+        .textos-sub-post p {
+            font-size: 0.6rem;
+            margin: 0 0 5px 0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* Formatando o link de leia mais específico desse bloco */
+        .textos-sub-post a {
+            font-size: 0.7rem;
+            color: #B00020;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        /* ÁREA DO RODAPÉ */
+        #footer{
+            background-color: #2B4A6D;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }

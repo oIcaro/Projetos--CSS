@@ -1,0 +1,23 @@
+body{
+    background-color: lightgrey;
+}
+
+#content{
+    border: 5px solid violet;
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+}
+
+h1{
+    color: purple;
+}
+
+#codigo{
+    color: gray;
+}
+
+#img-iphone{
+    border: 2px solid violet;
+    padding: 10px;
+}
