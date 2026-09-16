@@ -1,0 +1,137 @@
+/* RESET E CONFIGURAÇÕES GLOBAIS */
+* {
+    font-family: Arial, Helvetica, sans-serif; /* Define a ordem de preferência de fontes para todo o site */
+    margin: 0;                                 /* Remove a margem padrão externa que os navegadores colocam */
+
+    padding: 0; /* Remove a margem padrão interna que os navegadores colocam */
+}
+
+body {
+    background-color: rgb(240, 239, 239);     /* Aplica o fundo cinza claro na página inteira */
+    margin: 0;                                 /* Garante que o corpo da página fique zerado nas bordas */
+}
+
+
+/* SEÇÃO: MENU DO SITE (#HEADER) */
+
+#header {
+    background-color: gold;                    /* Define a cor de fundo amarela do cabeçalho */
+    text-align: center;                          /* Centralização do Texto */
+    padding: 15px;                              /*  Ajuste de espaçamento */
+}
+
+#logo {
+    padding: 10px;                             /* Adiciona um espaçamento de 10px em volta da logo */
+    font-size: 2.5em;                            /* Multiplica o tamanho da fonte original da logo por 3 vezes */
+    font-weight: bold;                         /* Deixa a fonte em negrito */
+    color: white;                              /* Aplica a cor branca padrão aos textos da logo */
+}
+
+#logo span:first-child {
+    color: black;                              /* Pega apenas o primeiro span ("Tec") e pinta de preto */
+}
+
+
+/* LINKS DO MENU DE NAVEGAÇÃO */
+
+#links {
+    padding: 10px;                              /* Ajuste de espaçamento */
+}
+
+
+#links a {
+    color: white;                              /* Deixa o texto dos links padrão em branco */
+    font-size: 1.5em;                          /* Aumenta o tamanho da fonte dos links em 50% */
+    font-weight: bold;                         /* Aplica o estilo negrito aos links */
+    text-decoration: none;                     /* Remove aquele sublinhado padrão que todo link tem */
+    padding: 10px;                             /* Cria uma área de clique de 10px ao redor do link */
+}
+
+
+#links a:hover {
+    background-color: white;                   /* Quando passa o mouse, o fundo do link fica branco */
+    color: gold;                               /* Quando passa o mouse, a letra do link fica amarela */
+    padding: 10px;                              /* Ajusta levemente o espaçamento interno durante o efeito hover */
+}
+
+
+/* SEÇÃO: ESTRUTURA DE CONTEÚDO (#CONTENT) */
+
+#content {
+    display: flex;                             /* Coloca a área de posts e a sidebar lado a lado na horizontal */
+    width: 920px;                              /* Define a largura total máxima do corpo do site */
+    margin: 0 auto;                            /* Centraliza a div do corpo inteiro no meio da tela do computador */
+    margin-top: 15px;                          /* Descola o conteúdo do menu amarelo, dando 15px de margem superior */
+}
+
+#area-postagem {
+    width: 660px;                              /* Define a largura total máxima da coluna de posts (na esquerda) */
+}
+
+
+/* POSTAGENS INDIVIDUAIS */
+
+.post {
+    background-color: white;                   /* Dá o fundo branco para a folha do post */
+    width: 640px;                              /* Define a largura do conteúdo interno do post */
+    padding: 15px;                             /* Afasta o texto e imagens da borda interna do post */
+    display: block;                            /* Garante que o post se comporte como um bloco rígido */
+    margin-bottom: 10px;                       /* Empurra o post de baixo, dando um espaço de 10px entre eles */
+}
+
+.titulo-post {
+    color: gold;                               /* Aplica a cor dourada/amarela no título do post */
+    font-size: 2em;                            /* Deixa o tamanho da fonte do título duas vezes maior */
+    font-weight: bold;                         /* Aplica o negrito no título do post */
+}
+
+
+/* SEÇÃO: BARRA LATERAL (#SIDEBAR) */
+
+#sidebar {
+    height: 200px;                             /* Define uma altura inicial de referência para a barra lateral */
+    width: 240px;                              /* Define a largura fixa da barra lateral (na direita) */
+    margin-left: 20px;                         /* Cria o espaçamento de 20px separando a sidebar dos posts */
+    display: block;                            /* Garante que a barra se comporte como um bloco vertical */
+}
+
+.destaques {
+    background-color: white;                   /* Aplica o fundo branco nos cartões da barra lateral */
+    padding: 10px;                             /* Dá um respiro interno de 10px para os textos não tocarem as bordas */
+    margin-bottom: 20px;                       /* Dá um espaço de 20px entre o cartão de cima e o de baixo */
+}
+
+.destaques>p {
+    color: gold;                               /* Pinta os textos dos parágrafos de categorias com a cor dourada */
+    font-size: 20px;                           /* Aumenta o tamanho da fonte das categorias para 20px */
+    font-weight: bold;                         /* Deixa os nomes das categorias em negrito */
+}
+
+.titulo-destaques {
+    background-color: lightgray;               /* Coloca o fundo cinza claro atrás do título do cartão */
+    color: rgb(59, 59, 59);                    /* Define a cor do texto do título em um cinza escuro */
+    font-size: 20px;                           /* Define o tamanho da fonte do título em 20px */
+    font-weight: bold;                         /* Aplica o negrito no título da sidebar */
+    display: block;                            /* Transforma o span em bloco para ele aceitar a propriedade width */
+    width: 200px;                              /* Limita o tamanho horizontal do fundo cinza em 200px */
+    padding: 5px;                              /* Adiciona folga interna de 5px entre o texto e a borda cinza */
+}
+
+.leia-mais {
+    color: gold;                               /* Pinta o link/texto de "Leia mais" em dourado */
+    text-decoration: none;
+}
+
+
+/* SEÇÃO: RODAPÉ (#FOOTER) */
+
+#footer {
+    width: 920px;                              /* Iguala a largura do rodapé com a do conteúdo do site (920px) */
+    height: 60px;                              /* Define uma altura fixa de 60px para a faixa do rodapé */
+    margin: 0 auto;                            /* Centraliza horizontalmente o bloco do rodapé na tela */
+    text-align: center;                        /* Garante o alinhamento centralizado do texto */
+    background-color: lightgrey;               /* Define o fundo cinza clássico para o rodapé */
+    display: flex;                             /* Inicia o Flexbox para alinhar o h3 interno */
+    align-items: center;                       /* Centraliza o texto verticalmente dentro da faixa de 60px */
+    justify-content: center;                   /* Centraliza o texto horizontalmente dentro do rodapé */
+}

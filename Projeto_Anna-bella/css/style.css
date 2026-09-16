@@ -1,0 +1,39 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(../img/fundo.png);
+}
+
+#container{
+    width: 900px;
+}
+
+#nav{
+    background-color: #C5C5B2;
+    padding: 15px;
+}
+
+a{
+    color: #4B566A;
+    font-weight: bold;   
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#sobre{
+    background-color: #E8E8D9;
+    padding: 10px;
+    padding-bottom: 2em;
+}
+
+#sobre>h2{
+    color: #828271;
+}
+
+#header{
+    text-align: center;
+    font-weight: bold;
+}
